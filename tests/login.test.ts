@@ -3,6 +3,9 @@ test('login test', async () => {
     const browser = await chromium.launch({
         headless :false
     });
+
+    //changes are done
+    
     const context = await browser.newContext();
     const page = await context.newPage();
     await page.goto("https://ecommerce-playground.lambdatest.io/");
