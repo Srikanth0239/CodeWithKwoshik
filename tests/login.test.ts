@@ -4,8 +4,8 @@ test('login test', async () => {
         headless :false
     });
 
+
     //changes are done
-    
     const context = await browser.newContext();
     const page = await context.newPage();
     await page.goto("https://ecommerce-playground.lambdatest.io/");
